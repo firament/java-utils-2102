@@ -1,0 +1,63 @@
+{
+	"A": {
+		"Tag": "A",
+		"Note": "TLS Test",
+		"Name": "First Last",
+		"User": "first.last@ethereal.email",
+		"Pwd": "plain_text_password",
+		"SmtpProps": {
+			"mail.smtp.port": "587",
+			"mail.smtp.auth": "true",
+			"mail.smtp.starttls.enable": "true",
+			"mail.smtp.host": "smtp.ethereal.email"
+		},
+		"ToList": [
+			{
+				"address": "first.last.one@test.com",
+				"personal": "First Last 1",
+				"encodedPersonal": "First Last 1"
+			},
+			{
+				"address": "first.last.two@test.com",
+				"personal": "First Last 2",
+				"encodedPersonal": "First Last 2"
+			},
+			{
+				"address": "first.last.three@test.com",
+				"personal": "First Last 3",
+				"encodedPersonal": "First Last 3"
+			}
+		]
+	},
+	"B": {
+		"Tag": "B",
+		"Note": "SSL Test",
+		"Name": "Test User Account",
+		"User": "user@test.com",
+		"Pwd": "plain_text_password",
+		"SmtpProps": {
+			"mail.smtp.socketFactory.class": "javax.net.ssl.SSLSocketFactory",
+			"mail.smtp.port": "465",
+			"mail.smtp.auth": "true",
+			"mail.smtp.host": "smtpout.secureserver.net",
+			"mail.smtp.socketFactory.port": "465"
+		},
+		"ToList": [
+			{
+				"address": "first.last.one@test.com",
+				"personal": "First Last 1",
+				"encodedPersonal": "First Last 1"
+			},
+			{
+				"address": "first.last.two@test.com",
+				"personal": "First Last 2",
+				"encodedPersonal": "First Last 2"
+			},
+			{
+				"address": "first.last.three@test.com",
+				"personal": "First Last 3",
+				"encodedPersonal": "First Last 3"
+			}
+		]
+	}
+}
